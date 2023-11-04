@@ -26,5 +26,14 @@
         {{course.longDescription}}
     </div>
 
+    <div class="course-card__category-container"
+        [ngSwitch]="course.category"
+    >
+        <div class="course-card__category-text" *ngSwitchCase="'BEGINNER'">Beginner</div>
+        <div class="course-card__category-text" *ngSwitchCase="'INTERMEDIATE'">Intermediate</div>
+        <div class="course-card__category-text" *ngSwitchCase="'ADVANCED'">Advanced</div>
+        <div class="course-card__category-text" *ngSwitchDefault>All levels</div>
+    </div>
+
     <button class="button" (click)="onClick()">View Course</button>
 </div>

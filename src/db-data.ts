@@ -6,7 +6,7 @@ export const COURSES: Course[] = [
         description: "Angular Core Deep Dive",
         iconUrl: '',
         longDescription: "A detailed walk-through of the most important part of Angular - the Core and Common modules",
-        category: 'INTERMEDIATE',
+        category: '',
         lessonsCount: 10
     },
     {

@@ -3,6 +3,6 @@ export type Course = {
     description: string,
     iconUrl: string,
     longDescription: string,
-    category: 'BEGINNER' | 'INTERMEDIATE' | 'ADVANCED',
+    category: 'BEGINNER' | 'INTERMEDIATE' | 'ADVANCED' | '',
     lessonsCount?: number
 }
