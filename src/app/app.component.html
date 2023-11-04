@@ -5,8 +5,8 @@
 
 <div class="courses">
   <sp-course-card 
+    *ngFor="let course of courses"
     [course]="course" 
-    *ngFor="let course in courses"
     (courseSelected)="onCourseSelected($event)"
     ></sp-course-card>
 </div>
