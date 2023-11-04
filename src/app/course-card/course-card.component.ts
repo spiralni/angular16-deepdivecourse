@@ -16,4 +16,10 @@ export class CourseCardComponent {
   onClick(): void {
     this.courseSelected.emit(this.course);
   }
+
+  setCardClasses() {
+    return {
+      beginner: this.course.category === 'BEGINNER',
+    }
+  }
 }

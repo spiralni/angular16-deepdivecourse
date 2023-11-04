@@ -1,5 +1,8 @@
-<div class="course-card" *ngIf="course">
-    <div class="course-title">
+<div class="course-card" 
+    *ngIf="course"
+    [ngClass]="setCardClasses()"
+>
+    <div class="course-card__title course-title">
         {{course.description}}
     </div>
 
@@ -7,7 +10,9 @@
         *ngIf="course.iconUrl; else noImageTemplate" 
         width="300" 
         alt="Angular Logo"
-        [src]="course.iconUrl">
+        [src]="course.iconUrl"
+        class="course-card__image"
+        >
 
     <ng-template #noImageTemplate>
         <p>No image available</p>
@@ -17,9 +22,9 @@
         <p>No image available</p>
     </div>
 
-    <div class="course-description">
+    <div class="course-card__description course-description">
         {{course.longDescription}}
     </div>
 
-    <button (click)="onClick()">View Course</button>
+    <button class="button" (click)="onClick()">View Course</button>
 </div>
