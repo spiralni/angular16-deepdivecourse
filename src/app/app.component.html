@@ -4,5 +4,9 @@
 </div>
 
 <div class="courses">
-  <sp-course-card></sp-course-card>
+  <sp-course-card 
+    [course]="course" 
+    *ngFor="let course in courses"
+    (courseSelected)="onCourseSelected($event)"
+    ></sp-course-card>
 </div>

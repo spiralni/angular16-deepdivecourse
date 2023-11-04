@@ -1,4 +1,6 @@
-export const COURSES: any[] = [
+import { Course } from "./app/model/course";
+
+export const COURSES: Course[] = [
     {
         id: 1,
         description: "Angular Core Deep Dive",
@@ -78,7 +80,6 @@ export const COURSES: any[] = [
     }
 
 ];
-
 
 export function findCourseById(courseId:number) {
     return COURSES.find(course => course.id === courseId);
