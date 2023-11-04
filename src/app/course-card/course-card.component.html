@@ -1,9 +1,21 @@
-<div class="course-card">
+<div class="course-card" *ngIf="course">
     <div class="course-title">
         {{course.description}}
     </div>
-    <img width="300" alt="Angular Logo"
-         [src]="course.iconUrl">
+
+    <img
+        *ngIf="course.iconUrl; else noImageTemplate" 
+        width="300" 
+        alt="Angular Logo"
+        [src]="course.iconUrl">
+
+    <ng-template #noImageTemplate>
+        <p>No image available</p>
+    </ng-template>
+
+    <div *ngIf="!course.iconUrl">
+        <p>No image available</p>
+    </div>
 
     <div class="course-description">
         {{course.longDescription}}
