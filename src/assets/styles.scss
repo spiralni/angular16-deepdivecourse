@@ -1,5 +1,5 @@
 
-course-card {
+sp-course-card {
   display: block;
 }
 
@@ -37,21 +37,21 @@ button {
   border-radius: 4px;
 }
 
-course-card.is-first {
+sp-course-card.is-first {
   border-top: 2px solid grey;
   padding-top: 20px;
 }
 
-course-card.is-last {
+sp-course-card.is-last {
   border-bottom: 2px solid grey;
   padding-top: 20px;
 }
 
-course-card.is-even {
+sp-course-card.is-even {
   background: lightgray;
 }
 
-course-card.is-odd {
+sp-course-card.is-odd {
   background: lightcyan;
 }
 
