@@ -1,6 +1,22 @@
 <div class="top-menu">
-    <img class="logo"
-         src="https://angular-academy.s3.amazonaws.com/main-logo/main-page-logo-small-hat.png">
+    <img class="logo" src="https://angular-academy.s3.amazonaws.com/main-logo/main-page-logo-small-hat.png">
+</div>
+
+<div>
+  <span>{{today}}</span> |
+  <span>{{today | date}}</span> |
+  <span>{{today | date:'MM/dd/y'}}</span> | 
+  <span>{{today | date:'longTime'}}</span> | 
+</div>
+
+<div *ngFor="let pair of (courses[0] | keyvalue)">
+    {{pair.key}}: {{pair.value}}
+</div>
+
+<div>
+  <span>{{'lowercase text' | uppercase}}</span> |
+  <span>{{ 90 | percent }}</span> | 
+  <span>{{350.60555 | currency:'EUR'}}</span>
 </div>
 
 <div class="courses">

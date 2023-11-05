@@ -9,6 +9,7 @@ import { Course } from './model/course';
 })
 export class AppComponent {
   courses: Course[] = COURSES;
+  today = new Date();
 
   onCourseSelected(course: Course) {
     console.log(`course ${course.id} clicked`);
