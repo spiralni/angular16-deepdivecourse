@@ -25,5 +25,14 @@
     *ngFor="let course of courses;index as i;first as isFirst;last as isLast;even as isEven;odd as isOdd"
     [course]="course" 
     (courseSelected)="onCourseSelected($event)"
-    ></sp-course-card>
+    >
+  
+  <p class="note-1" style="font-size: smaller; font-style: italic;">
+    This is just custom content passed to the component
+  </p>
+
+  <p class="note-2" style="font-size: smaller; font-style: italic; color: red;">
+    This is a second note
+  </p>
+  </sp-course-card>
 </div>

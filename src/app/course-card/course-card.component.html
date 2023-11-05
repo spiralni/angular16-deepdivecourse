@@ -22,6 +22,8 @@
             <p>No image available</p>
         </div>
 
+        <ng-content select=".note-2"></ng-content>
+
         <div class="course-card__description course-description">
             {{course.longDescription}}
         </div>
@@ -36,5 +38,7 @@
         </div>
 
         <button class="button" (click)="onClick()">View Course</button>
+
+        <ng-content select=".note-1"></ng-content>
     </div>
 </ng-container>
